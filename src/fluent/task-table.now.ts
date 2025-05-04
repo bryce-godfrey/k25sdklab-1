@@ -18,6 +18,9 @@ export const sn_todo_task = Table({
             label: "Order",
             default: 0
         }),
+        due_on: DateTimeColumn({
+            label: "Due on",
+        }),
         closed_on: DateTimeColumn({
             label: "Closed on"
         }),

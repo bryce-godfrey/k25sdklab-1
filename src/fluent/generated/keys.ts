@@ -40,6 +40,26 @@ declare global {
                         "sn_todo_list_create": {
                             "table": "sys_security_acl",
                             "id": "388e160758804f0e8b45e57b935fc1c2"
+                        },
+                        "src_server_date-utilities_ts": {
+                            "table": "sys_module",
+                            "id": "c7be8e5897344248bdad626c8014138e"
+                        },
+                        "todo-task-closedon-state": {
+                            "table": "sys_script",
+                            "id": "1647959a9b3a4ded8d7894b883231545"
+                        },
+                        "todo-task-dueon-set": {
+                            "table": "sys_script",
+                            "id": "e764caee5d9a4e5a8b38568d38301eb8"
+                        },
+                        "todo-menu": {
+                            "table": "sys_app_application",
+                            "id": "32c20ecb70654684a009d04071b0b3fe"
+                        },
+                        "task-menu-module": {
+                            "table": "sys_app_module",
+                            "id": "9004f73e015e4a1b8b4fa5ad56e89007"
                         }
                     };
                 composite: [
@@ -89,6 +109,30 @@ declare global {
                             "key": {
                                 "sys_security_acl": "sn_todo_list_create",
                                 "sys_user_role": "todo-user"
+                            }
+                        },
+                        {
+                            "table": "sys_module",
+                            "id": "b6b6862688324c31a0952d7a771d2263",
+                            "key": {
+                                "module": "date-fns@4.1.0",
+                                "file": "index.js"
+                            }
+                        },
+                        {
+                            "table": "sys_module",
+                            "id": "3ce3041c057d44609c077ce2d220815e",
+                            "key": {
+                                "module": "date-fns@4.1.0",
+                                "file": "cyclonedx/bom.json"
+                            }
+                        },
+                        {
+                            "table": "sys_module",
+                            "id": "db90dd08bee049fa85b49027278d2528",
+                            "key": {
+                                "module": "date-fns@4.1.0",
+                                "file": "package.json"
                             }
                         }
                     ];
