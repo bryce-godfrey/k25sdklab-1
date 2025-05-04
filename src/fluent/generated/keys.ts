@@ -128,8 +128,6 @@ declare global {
                             }
                         }
                     ];
-                deleted: {
-                    };
             }
         }
     }

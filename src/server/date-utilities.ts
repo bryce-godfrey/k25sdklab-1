@@ -1,10 +1,10 @@
-import { gs, GlideRecord } from "@servicenow/glide"
+import { gs, GlideRecord, GlideDateTime } from "@servicenow/glide"
 import { format, addDays } from "date-fns"
 
 export function checkRecordSateUpdateClosedOn(current: GlideRecord): void {
     gs.info(`updating closed_on for record: ${current.getLink()}`);
     current.setValue("closed_on", formatSN(new Date()));
-    current.update();
+    current.setValue("active", false)
 }
 
 export function autoSetDueOn(current: GlideRecord): void {
@@ -13,9 +13,8 @@ export function autoSetDueOn(current: GlideRecord): void {
     const dueAt = addDays(new Date(), 1);
 
     current.setValue("due_on", formatSN(dueAt))
-    current.update();
 }
 
-function formatSN(date: Date): string {
-    return format(date, "YYYY-MM-DD hh:mm:ss")
+function formatSN(date: Date): GlideDateTime {
+    return new GlideDateTime(format(date, "yyyy-MM-dd HH:mm:ss"))
 }

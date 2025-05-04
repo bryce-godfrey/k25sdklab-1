@@ -6,8 +6,9 @@ BusinessRule({
     name: "Set closed on when state closed",
     table: "sn_todo_task",
     when: "before",
-    action: ["update", "insert"],
+    action: ["update","insert"],
     active: true,
-    condition: `state=closed^closed_onISEMPTY`,
-    script: checkRecordSateUpdateClosedOn
+    filter_condition: `state=done^closed_onISEMPTY`,
+    script: checkRecordSateUpdateClosedOn,
+    abort_action: false
 })

@@ -8,6 +8,7 @@ BusinessRule({
     when: "before",
     action: ["insert"],
     active: true,
-    condition: `state=todo^due_onISEMPTY`,
-    script: autoSetDueOn
+    filter_condition: `state=todo^due_onISEMPTY`,
+    script: autoSetDueOn,
+    abort_action: false
 })
