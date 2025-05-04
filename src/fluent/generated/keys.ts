@@ -52,14 +52,6 @@ declare global {
                         "todo-task-dueon-set": {
                             "table": "sys_script",
                             "id": "e764caee5d9a4e5a8b38568d38301eb8"
-                        },
-                        "todo-menu": {
-                            "table": "sys_app_application",
-                            "id": "32c20ecb70654684a009d04071b0b3fe"
-                        },
-                        "task-menu-module": {
-                            "table": "sys_app_module",
-                            "id": "9004f73e015e4a1b8b4fa5ad56e89007"
                         }
                     };
                 composite: [
@@ -136,6 +128,8 @@ declare global {
                             }
                         }
                     ];
+                deleted: {
+                    };
             }
         }
     }
