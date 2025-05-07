@@ -4,4 +4,6 @@ declare const Class: any
 
 declare namespace global {
 declare class AbstractAjaxProcessor{ initialize(request?,responseXML?,gc?) process() newItem(name?) getParameter(name?) getDocument() getRootElement() getName() getValue() getType() getChars() setAnswer(value?) setError(error?) }
+
+declare class DateTimeUtils{ }
 }

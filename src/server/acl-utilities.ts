@@ -6,5 +6,5 @@ import { GlideRecord, gs } from '@servicenow/glide'
  * @returns true if sys_created_by is the current user
  */
 export function isCreatedByCurrentUser(current: GlideRecord) {
-    return current.getValue('sys_created_by') === gs.getUserID()
+    return current.getValue('sys_created_by') === gs.getUserName()
 }

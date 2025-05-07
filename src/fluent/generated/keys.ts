@@ -52,6 +52,22 @@ declare global {
                         "todo-task-dueon-set": {
                             "table": "sys_script",
                             "id": "e764caee5d9a4e5a8b38568d38301eb8"
+                        },
+                        "taskduedateutilities": {
+                            "table": "sys_script_include",
+                            "id": "ef8b6245b23b4ad0ac24d6f96872b250"
+                        },
+                        "todo-app-menu": {
+                            "table": "sys_app_application",
+                            "id": "3feb529af89f4dc0810c3bdec8a53fb9"
+                        },
+                        "lists-module": {
+                            "table": "sys_app_module",
+                            "id": "38c7b84598cc445a8224a64869bf95d2"
+                        },
+                        "tasks-module": {
+                            "table": "sys_app_module",
+                            "id": "1a03004c96dc4e1e8d73188da96aba84"
                         }
                     };
                 composite: [
